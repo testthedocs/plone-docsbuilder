@@ -38,7 +38,7 @@ last_built_date: ## Show last build date
 	docker inspect -f '{{ .Created }}' $(NAME):$(VERSION)
 
 .PHONY: release
-release: check_release_version image tag_latest push ## Combine steps to make release
+release: check_release_version build tag_latest push ## Combine steps to make release
 
 
 .PHONY: check_release_version
