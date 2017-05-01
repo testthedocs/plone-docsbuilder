@@ -4,7 +4,7 @@ Containerized application based on [Sphinx](http://www.sphinx-doc.org/en/stable/
 
 > # Note:
 >
-> plone-docsbuilder is written to do one thing in a certain way, it is **not** written to be a full replacement of [Sphinx](http://www.sphinx-doc.org/en/stable/).
+> plone-docsbuilder is written to do **one** thing in **a certain way**, it is **not** written to be a full replacement of [Sphinx](http://www.sphinx-doc.org/en/stable/).
 >
 > If you try to use plone-docsbuilder in a way it is not intended for, it will most likely **not** work !
 >
