@@ -52,9 +52,9 @@ clean:
 
 .PHONY: html
 html: clean
-	$(SPHINXBUILD) -b html -w $(BUILDDIR)/html.log $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	$(SPHINXBUILD) -b html -$(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
-	@echo "Build finished. HTML pages are in _build/html - Log is _build/html.log"
+	@echo "Build finished. HTML pages are in _build/html"
 
 .PHONY: testbuild
 testbuild: clean
@@ -64,9 +64,9 @@ testbuild: clean
 
 .PHONY: html-quiet
 html-quiet:
-	$(SPHINXBUILD) -b html -Q -w $(BUILDDIR)/html.log $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	$(SPHINXBUILD) -b html -Q $(BUILDDIR)/html
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html Log is _build/html.log"
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html"
 
 .PHONY: dirhtml
 dirhtml:

@@ -4,8 +4,11 @@ LABEL maintainer "Sven <sven@testthedocs.org>" \
 
 ENV PIP_CACHE /root/.cache
 
-RUN adduser -s /bin/false -D -H sphinx \
+RUN builddeps=' \
+    git \
+    && adduser -s /bin/false -D -H sphinx \
     && apk --no-cache add \
+    $builddeps \
     python3 \
     make \
     tini \
@@ -15,6 +18,7 @@ RUN adduser -s /bin/false -D -H sphinx \
     && pip3 install --upgrade pip \
     && pip3 install sphinx \
     sphinx_rtd_theme \
+    && pip install -e git://github.com/svx/sphinxcontrib-osexample.git@plone#egg=sphinxcontrib-osexample \
     && apk del --purge $builddeps \
     && rm -rf $PIP_CACHE
 
