@@ -1,5 +1,4 @@
 # ToDo
 
-* dockerignore
 * docs
 * asciinema
