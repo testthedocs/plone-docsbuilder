@@ -9,7 +9,7 @@ RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
 # Name
-NAME = testthedocs/plone-docbuilder
+NAME = testthedocs/plone-docsqbuilder
 # Get version form VERSION
 VERSION := $(shell cat VERSION)
 DOCKER := $(bash docker)
@@ -22,7 +22,7 @@ help: ## This help message
 
 .PHONY: build
 build: ## Builds docker image
-	docker build -t $(NAME):$(VERSION) --rm -f dockerfiles/Dockerfile .
+	docker build --no-cache=true -t $(NAME):$(VERSION) --rm -f dockerfiles/Dockerfile .
 
 .PHONY: push
 push: ## Pushes images

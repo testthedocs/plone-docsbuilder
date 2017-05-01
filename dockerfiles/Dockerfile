@@ -6,6 +6,7 @@ ENV PIP_CACHE /root/.cache
 
 RUN builddeps=' \
     git \
+    ' \
     && adduser -s /bin/false -D -H sphinx \
     && apk --no-cache add \
     $builddeps \
@@ -24,12 +25,12 @@ RUN builddeps=' \
 
 VOLUME ["/build/docs"]
 
-COPY _config /build/_config
-COPY Makefile /build/Makefile
-COPY _theme /build/_theme
+COPY dockerfiles/_config /build/_config
+COPY dockerfiles/Makefile /build/Makefile
+COPY dockerfiles/_theme /build/_theme
 
 WORKDIR /build
 
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY dockerfiles/entrypoint.sh /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
