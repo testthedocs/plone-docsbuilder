@@ -10,3 +10,4 @@ There are not written nor will be (**if**) included in a particular order.
 - [ ] add *quite* mode (not showing cli output)
 - [ ] add *log summary* as nice colored output
 - [ ] add markdown (md) support
+- [ ] remove dependency on index.rst

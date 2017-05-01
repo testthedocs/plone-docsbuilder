@@ -7,6 +7,7 @@ Dependencies
 
 - `Docker <https://www.docker.com/>`_
 - A working Internet connection to pull the container on the first run
+- A index.rst file
 
 Please follow the `installation guide <https://docs.docker.com/engine/installation/>`_ of Docker or consult the documentation of your Operating System
 to install Docker.

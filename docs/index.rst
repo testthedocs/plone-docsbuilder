@@ -8,4 +8,3 @@ Plone-Docsbuilder
    install
    usage
    roadmap
-   contribute
