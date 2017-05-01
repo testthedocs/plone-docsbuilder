@@ -33,4 +33,4 @@ If you for some reason want or need to use a certain version (release), you can 
 
    docker pull testthedocs/plone-docsbuilder:0.0.1
 
-Please check the `Changelog <https://github.com/testthedocs/plone-docsbuilder/blob/master/CHANGES.md>`_ to find out more changes and release.
+Please check the `Changelog <https://github.com/testthedocs/plone-docsbuilder/blob/master/CHANGES.md>`_ to find out more changes and releases.
