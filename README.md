@@ -1,6 +1,6 @@
 # Plone-Docsbuilder
 
-Containerized application based on [Sphinx](http://www.sphinx-doc.org/en/stable/) for test builds of docs.plone.org
+Containerized application based on [Sphinx](http://www.sphinx-doc.org/en/stable/) for test builds of [docs.plone.org](https://docs.plone.org).
 
 > # Note:
 >

@@ -11,3 +11,4 @@ There are not written nor will be (**if**) included in a particular order.
 - [ ] add *log summary* as nice colored output
 - [ ] add markdown (md) support
 - [ ] remove dependency on index.rst
+- [ ] remove dependency on _static
