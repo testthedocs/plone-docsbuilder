@@ -12,3 +12,4 @@ There are not written nor will be (**if**) included in a particular order.
 - [ ] add markdown (md) support
 - [ ] remove dependency on index.rst
 - [ ] remove dependency on _static
+- [ ] add option to use te default or the 'official' plone sphinx theme
