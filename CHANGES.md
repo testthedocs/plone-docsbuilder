@@ -1,6 +1,10 @@
 # Changelog
 
-## 0.0.2-dev
+## 0.0.2
+
+### Bugs
+
+* Fix Makefile of Sphinx, remove - (dash) [svx]
 
 ### Docs
 
