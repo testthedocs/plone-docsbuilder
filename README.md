@@ -8,7 +8,7 @@ Containerized application based on [Sphinx](http://www.sphinx-doc.org/en/stable/
 >
 > If you try to use plone-docsbuilder in a way it is not intended for, it will most likely **not** work !
 >
-> Please make sure to read the ["docs"](docs).
+> Please make sure to read the [docs](docs).
 
 ## Features
 
