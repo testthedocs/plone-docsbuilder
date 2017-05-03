@@ -14,3 +14,4 @@ There are not written nor will be (**if**) included in a particular order.
 - [ ] remove dependency on _static
 - [ ] add option to use the default~ or the 'official' plone sphinx theme
 - [ ] add option to build docs which are not in $PWD
+- [ ] include `sphinxcontrib-osexample <https://github.com/svx/sphinxcontrib-osexample>`_

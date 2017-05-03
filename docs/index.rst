@@ -22,5 +22,7 @@ The main purpose of this application is to create test builds in an 'easy', 'fas
 Limitations
 ===========
 
-- *plone-docsbuilder* depends on an *index.rst* file in your root documentation directory, see our :doc:`roadmap` for more info.
-- *plone-docsbuilder* will report a warning, if there is no *_static* directory in your root documentation directory.
+- *plone-docsbuilder* depends on an *index.rst* file in your root documentation directory, see our :doc:`roadmap` for more info
+- *plone-docsbuilder* will report a warning, if there is no *_static* directory in your root documentation directory
+- `sphinxcontrib-osexample <https://github.com/svx/sphinxcontrib-osexample>`_ is not included, yet
+
