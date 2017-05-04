@@ -1,5 +1,5 @@
 =================
-Plone-Docsbuilder
+Plone-DocsBuilder
 =================
 
 .. toctree::
