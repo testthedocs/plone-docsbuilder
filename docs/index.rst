@@ -10,6 +10,7 @@ Docs for version 0.0.3
    install
    usage
    roadmap
+   releasing
 
 Containerized application based on `Sphinx <http://www.sphinx-doc.org/en/stable>`_ for test builds of `docs.plone.org <https://docs.plone.org>`_.
 
