@@ -17,6 +17,7 @@ RUN builddeps=' \
     && python3 -m ensurepip \
     && rm -r /usr/lib/python*/ensurepip \
     && pip3 install --upgrade pip \
+    && pip3 install --upgrade setuptools \
     && pip3 install sphinx \
     sphinx_rtd_theme \
     && pip install -e git://github.com/svx/sphinxcontrib-osexample.git@plone#egg=sphinxcontrib-osexample \

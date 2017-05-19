@@ -1,6 +1,16 @@
 # Changelog
 
-## 0.0.3-dev
+## 0.0.4-dev
+
+## 0.0.3
+
+### Changes
+
+* Upgrade setuptools during build to avoid: "AttributeError: NamespacePath object has no attribute sort" [svx]
+
+### Bugs
+
+* Fix path to static files in conf.py for Sphinx [svx]
 
 ## 0.0.2
 
