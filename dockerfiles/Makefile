@@ -45,10 +45,16 @@ help:
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
 	@echo "  testbuild  to run a html testbuild in nit-picky mode"
+	@echo "  serve      to serve and rebuild the docs when a change is detected"
+
 
 .PHONY: clean
 clean:
 	rm -rf $(BUILDDIR)/*
+
+.PHONY: serve
+serve:
+	sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 
 .PHONY: html
 html: clean

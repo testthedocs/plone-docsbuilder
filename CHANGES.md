@@ -2,6 +2,8 @@
 
 ## 0.0.4-dev
 
+* Add sphinx-autobuild (experimental feature) currently this is unsecure [svx]
+
 ## 0.0.3
 
 ### Changes
