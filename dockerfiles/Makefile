@@ -6,7 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build -c _config
 PAPER         =
 BUILDDIR      = docs/_build
-CONFPATH	  = -c _config
+CONFPATH      = -c _config
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -54,7 +54,7 @@ clean:
 
 .PHONY: serve
 serve:
-	sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	sphinx-autobuild $(CONFPATH) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 
 .PHONY: html
 html: clean

@@ -81,7 +81,7 @@ Serve the documentation and rebuild when a change is detected.
 
    This feature is *experimental* and only tested on Linux.
 
-   Consider it **early alpha** 
+   Consider it **early alpha**
 
 .. code-block:: shell
 
@@ -92,9 +92,4 @@ Point your browser to  http://127.0.0.1:8000.
 Each time a change to the documentation source is detected, the HTML is rebuilt and the browser automatically reloaded.
 
 To stop the server press `` Ctrl C``.
-
-Limitations
------------
-
-Currently *serve mode* only works with a *conf.py* file in */docs*. 
 
