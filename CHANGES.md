@@ -2,6 +2,18 @@
 
 ## 0.0.4-dev
 
+### Feature
+
+* Add sphinx-autobuild (experimental feature) currently this is unsecure [svx]
+
+### Improve
+
+* Improve entrypoint script witch a check if index.rst exists, if not exit [svx]
+
+### Docs
+
+* Add docs and security warning about *serve mode* [svx]
+
 ## 0.0.3
 
 ### Changes

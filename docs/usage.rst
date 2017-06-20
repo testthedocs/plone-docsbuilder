@@ -40,7 +40,7 @@ The *build output* will be saved in a directory called *_build* in your `$PWD`.
 Example
 -------
 
-Change into your documentation dorectory (/docs) of your project:
+Change into your documentation directory (/docs) of your project:
 
 .. code-block:: shell
 
@@ -63,3 +63,33 @@ After the build is finished, check the content of the directory with ``ls`` agai
 .. code-block:: shell
 
    index.rst    _build
+
+
+Serve Mode
+==========
+
+Serve the documentation and rebuild when a change is detected.
+
+.. warning::
+
+   This uses *--network="host"* which gives the container full access to local system services
+   such as D-bus and is therefore considered **insecure !**
+
+   **Be sure that you know what you are doing !**
+
+.. note::
+
+   This feature is *experimental* and only tested on Linux.
+
+   Consider it **early alpha**
+
+.. code-block:: shell
+
+   docker run -it --net=host -v `pwd`:/build/docs testthedocs/plone-docsbuilder serve
+
+Point your browser to  http://127.0.0.1:8000.
+
+Each time a change to the documentation source is detected, the HTML is rebuilt and the browser automatically reloaded.
+
+To stop the server press `` Ctrl C``.
+
