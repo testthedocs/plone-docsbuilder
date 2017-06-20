@@ -27,5 +27,4 @@ Limitations
 
 - *plone-docsbuilder* depends on an *index.rst* file in your root documentation directory, see our :doc:`roadmap` for more info
 - *plone-docsbuilder* will report a warning, if there is no *_static* directory in your root documentation directory
-- `sphinxcontrib-osexample <https://github.com/svx/sphinxcontrib-osexample>`_ is not included, yet
 
