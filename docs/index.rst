@@ -2,6 +2,8 @@
 Plone-DocsBuilder
 =================
 
+Docs for version 0.0.4
+
 .. toctree::
    :maxdepth: 2
 
