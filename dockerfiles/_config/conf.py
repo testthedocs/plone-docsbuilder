@@ -19,7 +19,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sphinx_rtd_theme
+import sphinxtheme.plone
 
 # -- General configuration ------------------------------------------------
 
@@ -131,12 +131,23 @@ todo_include_todos = True
 #
 #html_theme = 'alabaster'
 html_theme = "sphinx_rtd_theme"
+html_theme = "plone_org_5"
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme_options = {
+    'external_topbar': True,
+    'version_switcher': False,
+    'always_show_version_switcher': False,
+    'always_show_language_switcher': False,
+    'show_version_warning': False,
+    'selected_version': '5',
+    'use_freshdesk': False,
+    'use_gitter': False,
+}
+#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme_path = sphinxtheme.plone.get_html_theme_path()
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
 # The name for this set of Sphinx documents.
