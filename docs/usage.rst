@@ -65,6 +65,48 @@ After the build is finished, check the content of the directory with ``ls`` agai
    index.rst    _build
 
 
+Debug Mode
+==========
+
+Run plone-docsbuilder in ``debug mode``.
+
+.. code-block:: console
+
+   $ docker run -v `pwd`:/build/docs testthedocs/plone-docsbuilder:0.0.4 debug
+   rm -rf docs/_build/*
+   sphinx-build -c _config -n -b html -d docs/_build/doctrees   docs docs/_build/debug
+   Running Sphinx v1.6.3
+   making output directory...
+   loading pickled environment... not yet created
+   building [mo]: targets for 0 po files that are out of date
+   building [html]: targets for 1 source files that are out of date
+   updating environment: 1 added, 0 changed, 0 removed
+   reading sources... [100%] index
+
+   looking for now-outdated files... WARNING: /build/docs/index.rst:1: (SEVERE/4) Title overline & underline mismatch.
+
+   =====
+   Index
+   ===
+   none found
+   pickling environment... done
+   checking consistency... done
+   preparing documents... done
+   writing output... [100%] index
+
+   generating indices... genindex
+   writing additional pages... search
+   copying static files... done
+   copying extra files... done
+   dumping search index in English (code: en) ... done
+   dumping object inventory... done
+   build succeeded, 1 warning.
+
+   Debug build finished. The HTML pages are in _build/debug
+
+plone-docsbuilder will warn about all references where the target cannot be found.
+
+
 Serve Mode
 ==========
 
