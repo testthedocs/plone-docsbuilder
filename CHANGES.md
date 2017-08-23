@@ -4,6 +4,10 @@
 
 ## 0.0.4
 
+* Fix path to logo in conf.py [svx]
+* Update Sphinx [svx]
+* Update Alpine [svx]
+
 ### Feature
 
 * Add sphinx-autobuild (experimental feature) currently this is unsecure [svx]
