@@ -151,7 +151,7 @@ html_short_title = 'TestBuild'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = '../_theme/plone-invers.svg'
+html_logo = '../_theme/static/plone-invers.svg'
 
 # The name of an image file (relative to this directory) to use as a favicon of
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
