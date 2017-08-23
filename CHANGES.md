@@ -2,11 +2,21 @@
 
 ## 0.0.5-dev
 
-## 0.0.4
+### Changes
 
-* Fix path to logo in conf.py [svx]
 * Update Sphinx [svx]
 * Update Alpine [svx]
+
+### Fix
+
+* Fix path to logo in conf.py [svx]
+* Makefile: replace 'testbuild' with debug [svx]
+
+### Feature
+
+* Makefile: add debug-strict [svx]
+
+## 0.0.4
 
 ### Feature
 

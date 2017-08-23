@@ -62,11 +62,19 @@ html: clean
 	@echo
 	@echo "Build finished. HTML pages are in _build/html"
 
-.PHONY: testbuild
-testbuild: clean
-	$(SPHINXBUILD) -nW -b html $(ALLSPHINXOPTS) $(BUILDDIR)/testhtml
+.PHONY: debug
+debug: clean
+	$(SPHINXBUILD) -n -b html $(ALLSPHINXOPTS) $(BUILDDIR)/debug
 	@echo
-	@echo "Testbuild finished. The HTML pages are in _build/testhtml."
+	@echo "Debug build finished. The HTML pages are in _build/debug"
+
+.PHONY: debug-strict
+debug-strict: clean
+	@echo
+	$(SPHINXBUILD) -n -W -b html $(ALLSPHINXOPTS) $(BUILDDIR)/debug-strict
+	@echo
+	@echo "Strict debugging finished. The HTML pages are in _build/debug-strict."
+
 
 .PHONY: html-quiet
 html-quiet:
