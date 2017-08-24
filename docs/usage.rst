@@ -5,7 +5,7 @@ Usage
 .. note::
 
    All commands in the documentation refrer to the installation according to the official
-   ` Docker installation guide <https://docs.docker.com/engine/installation/>`_.
+   `Docker installation guide <https://docs.docker.com/engine/installation/>`_.
 
    If you installed Docker via the package manager of your Operating System you may have to adjust the commands.
 
