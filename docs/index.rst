@@ -4,6 +4,7 @@ Plone-DocsBuilder
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    install
    usage
