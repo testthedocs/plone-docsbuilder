@@ -72,7 +72,7 @@ Run plone-docsbuilder in ``debug mode``.
 
 .. code-block:: console
 
-   $ docker run -v `pwd`:/build/docs testthedocs/plone-docsbuilder:0.0.4 debug
+   $ docker run -v `pwd`:/build/docs testthedocs/plone-docsbuilder debug
    rm -rf docs/_build/*
    sphinx-build -c _config -n -b html -d docs/_build/doctrees   docs docs/_build/debug
    Running Sphinx v1.6.3
