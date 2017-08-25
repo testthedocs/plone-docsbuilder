@@ -4,7 +4,7 @@ Usage
 
 .. note::
 
-   All commands in the documentation refrer to the installation according to the official
+   All commands in the documentation refer to the installation according to the official
    `Docker installation guide <https://docs.docker.com/engine/installation/>`_.
 
    If you installed Docker via the package manager of your Operating System you may have to adjust the commands.
@@ -33,9 +33,9 @@ Check and update application image to a newer version:
 Building HTML
 =============
 
-*plone-docsbuilder* is designed to build HTML out of *rst* files in your *current working directory* (`$PWD`).
+*plone-docsbuilder* is designed to build HTML out of ``rst`` files in your current working directory (```$PWD```).
 
-The *build output* will be saved in a directory called *_build* in your `$PWD`.
+The build output will be saved in a directory called ``_build`` in your ```$PWD```.
 
 Example
 -------
@@ -46,7 +46,7 @@ Change into your documentation directory (/docs) of your project:
 
    cd docs
 
-Do a ``ls`` to see all the files here:
+Do a :command:`ls` to see all the files here:
 
 .. code-block:: shell
 
@@ -58,7 +58,7 @@ Run *plone-docsbuilder*:
 
    docker run -v `pwd`:/build/docs testthedocs/plone-docsbuilder html
 
-After the build is finished, check the content of the directory with ``ls`` again:
+After the build is finished, check the content of the directory with :command:`ls` again:
 
 .. code-block:: shell
 
@@ -133,5 +133,5 @@ Point your browser to  http://127.0.0.1:8000.
 
 Each time a change to the documentation source is detected, the HTML is rebuilt and the browser automatically reloaded.
 
-To stop the server press `` Ctrl C``.
+To stop the server press :command:`Ctrl C`.
 
