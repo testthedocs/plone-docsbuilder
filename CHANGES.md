@@ -1,6 +1,8 @@
 # Changelog
 
-## 0.0.5-dev
+## 0.0.6-dev
+
+## 0.0.5
 
 ### Changes
 
@@ -11,6 +13,7 @@
 
 * Fix path to logo in conf.py [svx]
 * Makefile: replace 'testbuild' with debug [svx]
+* reST in documentation [svx]
 
 ### Feature
 
