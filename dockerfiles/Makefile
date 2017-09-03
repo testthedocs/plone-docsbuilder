@@ -62,6 +62,15 @@ html: clean
 	@echo
 	@echo "Build finished. HTML pages are in _build/html"
 
+.PHONY: local
+local:
+	if [ -f docs/conf.py ] ; \
+	then \
+		sphinx-build -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html ; \
+	else \
+		@echo "Can't detect local config !" ; \
+	fi;
+
 .PHONY: debug
 debug: clean
 	$(SPHINXBUILD) -n -b html $(ALLSPHINXOPTS) $(BUILDDIR)/debug
