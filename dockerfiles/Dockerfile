@@ -21,7 +21,7 @@ RUN builddeps=' \
     && pip3 install sphinx \
 		sphinx_rtd_theme \
 		sphinx-autobuild \
-    && pip install -e git://github.com/svx/sphinxcontrib-osexample.git@plone#egg=sphinxcontrib-osexample \
+    && pip3 install -e git://github.com/svx/sphinxcontrib-osexample.git@plone#egg=sphinxcontrib-osexample \
     && apk del --purge $builddeps \
     && rm -rf $PIP_CACHE
 
