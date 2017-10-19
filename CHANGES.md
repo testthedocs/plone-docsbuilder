@@ -2,6 +2,8 @@
 
 ## 0.0.6-dev
 
+* Hide version in theme [svx]
+
 ### Changes
 
 * Update Sphinx [svx]
