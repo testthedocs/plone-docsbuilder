@@ -19,8 +19,8 @@ RUN builddeps=' \
     && pip3 install --upgrade pip \
     && pip3 install --upgrade setuptools \
     && pip3 install sphinx \
-		sphinx_rtd_theme \
-		sphinx-autobuild \
+	      sphinxtheme.plone==0.5.6 \
+        sphinx-autobuild \
     && pip3 install -e git://github.com/svx/sphinxcontrib-osexample.git@plone#egg=sphinxcontrib-osexample \
     && apk del --purge $builddeps \
     && rm -rf $PIP_CACHE
