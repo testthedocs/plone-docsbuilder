@@ -1,6 +1,23 @@
 # Changelog
 
-## 0.0.5-dev
+## 0.0.6-dev
+
+* Hide version in theme [svx]
+
+### Changes
+
+* Update Sphinx [svx]
+* Update Alpine [svx]
+
+### Fix
+
+* Fix path to logo in conf.py [svx]
+* Makefile: replace 'testbuild' with debug [svx]
+* reST in documentation [svx]
+
+### Feature
+
+* Makefile: add debug-strict [svx]
 
 ## 0.0.4
 

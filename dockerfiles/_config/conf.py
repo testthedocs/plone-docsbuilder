@@ -159,6 +159,7 @@ html_short_title = 'TestBuild'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
+
 #html_logo = '../_theme/plone-invers.svg'
 
 # The name of an image file (relative to this directory) to use as a favicon of
@@ -357,3 +358,8 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 #intersphinx_mapping = {'https://docs.python.org/': None}
+intersphinx_mapping = {
+    'plone': ('https://docs.plone.org/', None),
+    'python': ('https://docs.python.org/2.7', None)
+}
+

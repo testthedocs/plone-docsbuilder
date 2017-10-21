@@ -38,17 +38,40 @@ Workflow
   - Why you did it
 
 5. Merge $BRANCH into master
-6. Create a *release branch* of the master
+
+6. Update Changes.md
+
+7. Create a *release branch* of the master
 
 .. code-block:: shell
 
    git checkout -b 0.0.4
 
-7. Update version in the VERSION file
-8. Update Changes.md
-9. Make a release
+8. Update version in the VERSION file
+
+9. Tag the branch with the version nr
+
+.. code-block:: shell
+
+   git tag 0.0.4
+
+10. Make a release
 
 .. code-block:: shell
 
    make release
 
+11. Commit to git and push to GitHub
+
+.. code-block:: shell
+
+   git add ...
+   git commit -m "Release: 0.0.4"
+   git push origin 0.0.4
+   git push origin --tags
+
+12. Switch to master branch for further development
+
+.. code-block:: shell
+
+   git checkout master
