@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.0.6-dev
+## 0.0.5
 
 * Hide version in theme [svx]
+* Cleanup Sphinx config [svx]
 
 ### Changes
 
